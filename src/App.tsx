@@ -279,9 +279,12 @@ export default function App() {
                               onChange={(e) => handleItemChange(item.id, 'sac', e.target.value)}
                               className="px-2 py-1 bg-transparent border-0 focus:ring-0 text-xs"
                             >
+                              <option value="996311">996311 (5%)</option>
                               <option value="996331">996331 (5%)</option>
-                              <option value="996311">996311 (18%)</option>
-                              <option value="996332">996332 (12%)</option>
+                              <option value="997321">997321 (18%)</option>
+                              <option value="999714">999714 (18%)</option>
+                              <option value="999729">999729 (18%)</option>
+                              <option value="996423">996423 (18%)</option>
                             </select>
                           </td>
                           <td className="py-3 pr-2">

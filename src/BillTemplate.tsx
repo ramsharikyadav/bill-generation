@@ -27,9 +27,8 @@ const BillTemplate: React.FC<BillTemplateProps> = ({ data }) => {
 
   data.items.forEach(item => {
     let rate = 5;
-    if (item.sac === '996311') rate = 18;
-    else if (item.sac === '996331') rate = 5;
-    else if (item.sac === '996332') rate = 12;
+    if (['997321', '999714', '999729', '996423'].includes(item.sac)) rate = 18;
+    else if (['996311', '996331'].includes(item.sac)) rate = 5;
     
     const group = taxGroups.find(g => g.rate === rate);
     if (group) {
